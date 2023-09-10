@@ -1,7 +1,7 @@
 import pandas as pd
 
-timeTable = pd.read_excel(r"C:\Users\baolo\OneDrive\Desktop\timeTable.xlsx")
-registedClass = pd.read_excel(r"C:\Users\baolo\OneDrive\Desktop\registedClass.xlsx")
+timeTable = pd.read_excel(r"timeTable.xlsx")
+registedClass = pd.read_excel(r"registedClass.xlsx")
 week = timeTable['Week']
 day  = timeTable['Day']
 time  = timeTable['Time']
