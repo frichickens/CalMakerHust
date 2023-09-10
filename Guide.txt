@@ -1,0 +1,9 @@
+- MỞ https://dt-ctt.hust.edu.vn/Students/TimetablesTemp.aspx
+- COPY các lớp đã đăng ký ở bảng thứ nhất vào file rigistedClass.xlsx
+- COPY Thời khóa biểu các lớp đăng ký các lớp đã đăng ký ở bảng thứ hai vào file timeTable.xlsx
+
+(KHÔNG XOÁ CỘT ĐẦU Ở CẢ 2 FILE)
+
+- CHẠY file .EXE
+- TKB sẽ xuất hiện trong file FinalRes.TXT
+^^ chúc mng học tập vui vẻ @QBao
