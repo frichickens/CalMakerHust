@@ -39,14 +39,17 @@ minWeek = 100
 for x in range(len(week)):
     arr = []
     if((len(str(week[x])))>2):
-        arr=[]
         tmp = ''
         if(checkComma(str(week[x]))):
             arr = str(week[x]).replace(",", "-")
             arr = arr.split("-")
-            for y in range(0,len(arr),2):
-                tmp += " ".join(str(i) for i in range(int(arr[y]),int(arr[y+1])+1)) +" "
-            
+            if(len(arr)%2==0):
+                for y in range(0,len(arr),2):
+                    tmp += " ".join(str(i) for i in range(int(arr[y]),int(arr[y+1])+1)) +" "
+            else:
+                for y in range(0,len(arr)-1,2):
+                    tmp += " ".join(str(i) for i in range(int(arr[y]),int(arr[y+1])+1)) +" "
+                tmp += str(arr[-1])
         else:
             arr = str(week[x]).split(",")
             tmp  = " ".join(arr)
@@ -64,21 +67,17 @@ for x in range(len(week)):
 
 weekLength = [int(x) for x in range(minWeek,maxWeek+1)]
 cnt = 0
-draft = 0
+pos = 0
 finalRes = []
 num = []
-code_txt = ''
-type_txt = ''
 while (cnt!=len(weekLength)):
     txt = []
-    f.write('Tuan '+str(weekLength[cnt]) + ': \n')
+    f.write('Week '+str(weekLength[cnt]) + ': \n')
     for x in range(len(week)):
         num = [int(s) for s in newWeek[x].split()]
         if(weekLength[cnt] in num):
-            draft = findPos(className[x],code,subCode)
-            code_txt = name[draft]
-            type_txt = classType[draft]
-            f.write(str(day[x])+' | '+str(time[x])+' | '+ str(className[x]) + ' | '+ str(code_txt) + ' | '+ str(type_txt) + '\n')
-    
+            pos = findPos(className[x],code,subCode)
+            f.write(str(day[x])+ ' | ' + str(location[x]) + ' | '+str(time[x]) + ' | ' + 
+                    str(className[x]) + ' | '+ str(name[pos]) + ' | '+ str(classType[pos])  + '\n')
     cnt+=1
 f.close()
