@@ -22,6 +22,4 @@ hoặc 2,3,13 hay 13 thì ok)
 
 - Liên hệ: Bao.dq235478@sis.hust.edu.vn || https://www.facebook.com/bumcutenek
 
-- FeedBack link: https://shorturl.at/lpzI0
-
-^^ chúc mng học tập vui vẻ @QBao - ITE10 Hust
+^^ Chúc mng học tập vui vẻ @QBao
