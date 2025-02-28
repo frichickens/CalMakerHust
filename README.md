@@ -20,6 +20,4 @@ hoặc 2,3,13 hay 13 thì ok)
 
 - Xem thêm file 1.png, 2.png, 3.png, 4.png trong ảnh minh hoạ hoặc guideVid để hiểu 
 
-- Liên hệ: Bao.dq235478@sis.hust.edu.vn || https://www.facebook.com/bumcutenek
-
 ^^ Chúc mng học tập vui vẻ @QBao
